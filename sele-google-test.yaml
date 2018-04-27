@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: googletest
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: googletest
+    spec:
+      containers:
+      - name: googletest
+        image: deepshikharai/demodockerc:latest
+        env:
+          - name: HUB_PORT_4444_TCP_ADDR
+            value: selenium-hub
+          - name: HUB_PORT_4444_TCP_PORT
+            value: "4444"
