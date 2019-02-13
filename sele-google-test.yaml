@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: googletest
-        image: deepshikharai/demodockerc:latest
+        image: raghulkumar91805/demodockerc:latest
         env:
           - name: HUB_PORT_4444_TCP_ADDR
             value: selenium-hub
