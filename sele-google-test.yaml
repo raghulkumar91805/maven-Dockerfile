@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: googletest
+  name: googletest1
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: googletest
+        app: googletest1
     spec:
       containers:
-      - name: googletest
+      - name: googletest1
         image: deepshikharai/demodockerc:latest
         env:
           - name: HUB_PORT_4444_TCP_ADDR
